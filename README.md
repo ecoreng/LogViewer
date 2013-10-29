@@ -1,6 +1,6 @@
 ##Error Log viewer plugin for Croogo##
 
-#Upload
-#Install
-#Access it from your croogo menu: Settings -> Log Viewer
-#Enjoy
+1. Upload: /app/plugins/LogViewer/
+2. Activate it: Extensions -> Plugins
+3. Access it: Croogo Admin Menu -> Settings -> Log Viewer
+4. Enjoy: :)
