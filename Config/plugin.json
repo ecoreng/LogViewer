@@ -1,0 +1,15 @@
+{
+	"name": "LogViewer",
+	"description": "Log viewer inside the Croogo admin panel",
+
+	"author": "ecoreng",
+	"authorEmail": "me@ecor.me",
+	"authorUrl": "http://ecor.me",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+		]
+	}
+}
