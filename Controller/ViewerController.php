@@ -39,32 +39,4 @@ class ViewerController extends LogViewerAppController
         ));
     }
 
-    public function admin_clearcache()
-    {
-        $this->delete();
-    }
-
-    protected function delete($path = '', $recursive = true)
-    {
-        if (!$path) {
-            $path = CACHE;
-        }
-        $dirItems = scandir($path);
-        $ignore = array('.', '..');
-        foreach ($dirItems AS $dirItem) {
-            if (in_array($dirItem, $ignore)) {
-                continue;
-            }
-
-            if (is_dir($path . $dirItem) && $recursive) {
-                $this->delete($path . $dirItem . DS);
-            } elseif (substr($dirItem, 0, 5) == 'cake_' || substr($dirItem, 0, 7) == 'croogo_') {
-                unlink($path . $dirItem);
-            }
-        }
-        $this->redirect(
-                array('action' => 'index'
-        ));
-    }
-
 }

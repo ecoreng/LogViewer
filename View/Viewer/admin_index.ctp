@@ -5,8 +5,6 @@ $this->Html
 	->addCrumb('Log Viewer', array('controller' => 'Viewer', 'action' => 'index'));
 
 echo $this->Html->link('Delete Log', array('action' => 'kill') , array('class' => 'btn'));
-echo $this->Html->link('Clear Cache', array('action' => 'clearcache') , array('class' => 'btn'));
-
 echo '<div></div>';
 
 if (is_array($logs)) {
